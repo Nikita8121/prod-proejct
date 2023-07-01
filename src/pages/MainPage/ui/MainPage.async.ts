@@ -1,3 +1,3 @@
-import React from "react";
+import React from 'react'
 
-export default React.lazy(() => import("./MainPage"));
+export default React.lazy(async () => await import('./MainPage'))
