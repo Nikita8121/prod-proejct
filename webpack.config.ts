@@ -1,10 +1,10 @@
 import path from 'path'
 import type webpack from 'webpack'
 import { buildWebpackConfig } from './config/build/buildWebpackConfig'
-import { type BuidPaths, type BuildEnv } from './config/build/types/config'
+import { type BuildPaths, type BuildEnv } from './config/build/types/config'
 
 export default (env: BuildEnv) => {
-  const paths: BuidPaths = {
+  const paths: BuildPaths = {
     entry: path.resolve(__dirname, 'src', 'index.tsx'),
     build: path.resolve(__dirname, 'build'),
     html: path.resolve(__dirname, 'public', 'index.html'),

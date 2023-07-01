@@ -4,7 +4,6 @@
     "noImplicitAny": true,
     "module": "ESNext",
     "target": "es5",
-    "strictNullChecks": true,
     "jsx": "react-jsx",
     "baseUrl": ".",
     "allowJs": true,
