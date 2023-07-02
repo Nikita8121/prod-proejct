@@ -1,5 +1,7 @@
 {
   "main-page": "Main page",
   "lang": "Russian",
-  "page-not-found": "Page not found"
+  "page-not-found": "Page not found",
+  "unexpected-error": "Unexpected Error",
+  "reload-page": "Reload page"
 }

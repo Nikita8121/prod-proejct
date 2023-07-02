@@ -1,13 +1,14 @@
-import { classNames } from 'shared/lib/classNames/classNames'
-import './PageLoader.scss'
+import { classNames } from 'shared/lib/classNames/classNames';
+import './PageLoader.scss';
+import { Loader } from '../Loader/Loader';
 
 interface PageLoaderProps {
-  className?: string
+  className?: string;
 }
 export const PageLoader = ({ className }: PageLoaderProps) => {
   return (
     <div className={classNames('page__loader', {}, [className])}>
-      <div className="lds-dual-ring"></div>
+      <Loader />
     </div>
-  )
-}
+  );
+};
