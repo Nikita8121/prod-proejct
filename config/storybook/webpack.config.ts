@@ -17,8 +17,8 @@ export default ({ config }: { config: webpack.Configuration }) => {
   const rules = config.module.rules;
 
   // modify storybook's file-loader rule to avoid conflicts with svgr
-  const fileLoaderRule = rules.find((rule) => rule.test.test('.svg'));
-  fileLoaderRule.exclude = /\.svg$/;
+  const fileLoaderRule = rules.find((rule) => (rule as any).test.test('.svg'));
+  (fileLoaderRule as any).exclude = /\.svg$/;
 
   rules.push({
     test: /\.svg$/,
