@@ -3,11 +3,7 @@ module.exports = {
     browser: true,
     es2021: true
   },
-  extends: [
-    'plugin:react/recommended',
-    'eslint-config-standard-with-typescript',
-    'plugin:i18next/recommended'
-  ],
+  extends: ['plugin:react/recommended', 'eslint-config-standard-with-typescript', 'plugin:i18next/recommended', 'plugin:storybook/recommended'],
   parser: '@typescript-eslint/parser',
   parserOptions: {
     project: './tsconfig.json',
@@ -24,14 +20,21 @@ module.exports = {
     'react/react-in-jsx-scope': 'off',
     '@typescript-eslint/strict-boolean-expressions': 'off',
     '@typescript-eslint/explicit-function-return-type': 'off',
-    'react/jsx-filename-extension': [
-      2,
-      { extensions: ['.js', '.jsx', '.tsx'] }
-    ],
+    'react/jsx-filename-extension': [2, {
+      extensions: ['.js', '.jsx', '.tsx']
+    }],
     '@typescript-eslint/prefer-nullish-coalescing': 'off',
-    'i18next/no-literal-string': ['error', { markupOnly: true }]
+    'i18next/no-literal-string': ['error', {
+      markupOnly: true
+    }]
   },
   globals: {
     __IS_DEV__: true
-  }
-}
+  },
+  overrides: [{
+    files: ['**/src/**/*.test.{ts,tsx}'],
+    rules: {
+      'i18next/no-literal-string': 'off'
+    }
+  }]
+};
