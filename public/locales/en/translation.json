@@ -5,5 +5,6 @@
   "unexpected-error": "Unexpected Error",
   "reload-page": "Reload page",
   "main-link": "Main",
-  "about-link": "About"
+  "about-link": "About",
+  "toggle": "Toggle"
 }
