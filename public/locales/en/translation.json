@@ -3,5 +3,7 @@
   "lang": "Russian",
   "page-not-found": "Page not found",
   "unexpected-error": "Unexpected Error",
-  "reload-page": "Reload page"
+  "reload-page": "Reload page",
+  "main-link": "Main",
+  "about-link": "About"
 }
