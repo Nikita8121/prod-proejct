@@ -8,5 +8,7 @@
   "about-link": "О сайте",
   "toggle": "Переключить",
   "lang-short": "англ",
-  "login": "Войти"
+  "login": "Войти",
+  "enter-username": "Введите username",
+  "enter-password": "Введите пароль"
 }

@@ -28,6 +28,7 @@ module.exports = {
     '@typescript-eslint/strict-boolean-expressions': 'off',
     '@typescript-eslint/explicit-function-return-type': 'off',
     'react-hooks/rules-of-hooks': 'error',
+    'react/display-name': 'off',
     'react-hooks/exhaustive-deps': 'warn',
     'react/jsx-filename-extension': [
       2,
